@@ -1,48 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Tutto sul meteo a vostra disposizione!">
+    <meta name="keywords" content="Meteo, Stazione metereologica, Pioggia, Vento, Caldo, Freddo">
+    <meta name="author" content="Toni Greco">
+    <meta name="copyright" content="tonigreco.it">
+    <meta name="robots" content="noindex">
+    <!--<meta http-equiv="refresh" content="60">-->
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acquisizione e Trasmissione</title>
-
+    <title>Stazione metereologica</title>
     <link rel="stylesheet" href="../../css/common.css">
-
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="../../stazioneMeteo.html">Torna alla stazione</a>
-        </nav>
-    </header>
+    <div id="container">
+        <div id="menu">
+            <header>
+                <img src="/Home/imgs/logo.png" alt="Logo del sito">
+                <h1>Acquisizione e Trasmissione</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Informazioni/informazioni.html">Informazioni</a></li>
+                    <li><a href="/Contatti/contatti.html">Contatti</a></li>
+                    <li>
+                        <a href="/StazioneMeteo/stazioneMeteo.html">Stazione Meterologica</a>
+                        <ul>
+                            <li>
+                                <a href="/StazioneMeteo/stazioneMeteo.html">Esterno</a>
+                                <ul>
+                                    <li><a href="/StazioneMeteo/pages/mainStation/acqetra.html">Acquisizione e trasmissione</a></li>
+                                    <li><a href="/StazioneMeteo/pages/mainStation/anemometro.html">Anemometro</a></li>
+                                    <li><a href="/StazioneMeteo/pages/mainStation/banderuola.html">Banderuola</a></li>
+                                    <li><a href="/StazioneMeteo/pages/mainStation/encoders.html">Encoders</a></li>
+                                    <li><a href="/StazioneMeteo/pages/mainStation/picam.html">PiCam</a></li>
+                                    <li><a href="/StazioneMeteo/pages/mainStation/proterigro.html">Termometro e Igrometro</a></li>
+                                    <li><a href="/StazioneMeteo/pages/mainStation/pulviometro.html">Pluvometro</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/StazioneMeteo/pages/mainStation/acqetra.html">Interno</a>
+                                <ul>
+                                    <li><a href="/StazioneMeteo/pages/electronic/antirimbalzo.html">Circuito antirimbalzo</a></li>
+                                    <li><a href="/StazioneMeteo/pages/electronic/batteriaCont.html">Batteria di continuità</a></li>
+                                    <li><a href="/StazioneMeteo/pages/electronic/picam.html">PiCam</a></li>
+                                    <li><a href="/StazioneMeteo/pages/electronic/raspberry.html">Raspberry</a></li>
+                                    <li><a href="/StazioneMeteo/pages/electronic/regtenin.html">Regolatore tensione input</a></li>
+                                    <li><a href="/StazioneMeteo/pages/electronic/regtenout.html">Regolatore tensione output</a></li>
+                                    <li><a href="/StazioneMeteo/pages/electronic/ups.html">UPS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/StazioneMeteo/pages/mainStation/encoders.html">Encoders</a>
+                                <ul>
+                                    <li><a href="/StazioneMeteo/pages/encoders/incbas.html">Encoder assoluto</a></li>
+                                    <li><a href="/StazioneMeteo/pages/encoders/incenc.html">Encoder incrementale</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-    <h1>Acquisizione e Trasmissione</h1>
-    <p>In questo contenitore è contenuta l'elettronica per l'acquisizione dei dati e la trasmissione di questi verso un server.</p>
-    <p>Di seguito vi è la vista dettagliata del circuito interno</p>
-    
-    <img src="../../imgs/AcquisTrasmisDati.jpg" usemap="#image-map" width="1000">
+        <div id="main-content">
+            <main>
+                <section>
+                    
+                    <p>In questo contenitore è contenuta l'elettronica per l'acquisizione dei dati e la trasmissione di questi verso un server.</p>
+                    <p>Di seguito vi è la vista dettagliata del circuito interno</p>
+                    
+                    <img src="../../imgs/AcquisTrasmisDati.jpg" usemap="#image-map" width="1000">
+                
+                    <map name="image-map">
+                        <area target="" alt="PiCamera" title="PiCamera" 
+                            href="../electronic/picam.html" coords="329,563,482,708" shape="rect">
+                
+                        <area target="" alt="Raspberry" title="Raspberry" 
+                            href="../electronic/raspberry.html" coords="139,534,478,943" shape="rect">
+                
+                        <area target="" alt="Regolatore di tensione in ingresso" title="Regolatore di tensione in ingresso" 
+                            href="../electronic/regtenin.html" coords="101,864,210,1060" shape="rect">
+                
+                        <area target="" alt="Regolatore di tensione in uscita" title="Regolatore di tensione in uscita" 
+                            href="../electronic/regtenout.html" coords="572,510,755,603" shape="rect">
+                
+                        <area target="" alt="UPS" title="UPS" 
+                            href="../electronic/ups.html" coords="625,669,861,898" shape="rect">
+                
+                        <area target="" alt="Betteria di continuità " title="Betteria di continuità" 
+                            href="../electronic/batteriaCont.html" coords="369,971,805,1216" shape="rect">
+                
+                        <area target="" alt="Circuito di antirimbalzo" title="Circuito di antirimbalzo" 
+                            href="../electronic/antirimbalzo.html" coords="503,275,729,402" shape="rect">
+                    </map>
+                </section>
+                <section>
 
-    <map name="image-map">
-        <area target="" alt="PiCamera" title="PiCamera" 
-            href="../electronic/picam.html" coords="329,563,482,708" shape="rect">
+                </section>
+            </main>
+        </div>
 
-        <area target="" alt="Raspberry" title="Raspberry" 
-            href="../electronic/raspberry.html" coords="139,534,478,943" shape="rect">
+        <div id="other-content">
+            <aside>
+                <h3>Link correlati</h3>
+                <ul>
+                    <li><a href="https://it.wikipedia.org/wiki/Stazione_meteorologica">Stazione metereologica</a></li>
+                </ul>
+            </aside>
+        </div>
 
-        <area target="" alt="Regolatore di tensione in ingresso" title="Regolatore di tensione in ingresso" 
-            href="../electronic/regtenin.html" coords="101,864,210,1060" shape="rect">
-
-        <area target="" alt="Regolatore di tensione in uscita" title="Regolatore di tensione in uscita" 
-            href="../electronic/regtenout.html" coords="572,510,755,603" shape="rect">
-
-        <area target="" alt="UPS" title="UPS" 
-            href="../electronic/ups.html" coords="625,669,861,898" shape="rect">
-
-        <area target="" alt="Betteria di continuità " title="Betteria di continuità" 
-            href="../electronic/batteriaCont.html" coords="369,971,805,1216" shape="rect">
-
-        <area target="" alt="Circuito di antirimbalzo" title="Circuito di antirimbalzo" 
-            href="../electronic/antirimbalzo.html" coords="503,275,729,402" shape="rect">
-    </map>
-
+        <div id="footer">
+            <footer>
+                <p>Creato da Andrea Maria Castronovo<sup>©</sup><p>
+                <p>Tutti i diritti riservati.</p>
+                <p>Contattami a <a href="mailto:andreamaria.castronovo.stud@ispascalcomandini.it">andreamaria.castronovo.stud@ispascalcomandini.it</a></p>
+            </footer>
+        </div>
+    </div>
 </body>
-</html>
