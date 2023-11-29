@@ -68,30 +68,66 @@
             </nav>
         </div>
 
+
+
         <div id="main-content">
             <main>
                 <section>
-                    <div style="display: flex; align-items: center; flex-direction: column;">
-                        <h1>Stazione Meteo</h1>
-                        <p>Questa è la stazione meteo. I punti di interesse sono cliccabili.</p>
+                    <h2>Progetto</h2>
+                    <p>Osserviamo ora il progetto complessivo</p>
+
+                    <!-- TODO: Rendere l'immagine interattiva con una mappa -->
+                    <img src="imgs/Progetto.png">
+
+                    <p>Notiamo dei sensori che, tramite una rete, comunicano con un server database e un server web.</p>
+                    <p>Tramite questi server i client faranno accesso ai dati rilevati dai sensori.</p>
+                    <p>Più precisamente i sensori comunicano con un computer (un <a href="components/electronic/raspberry.html">raspberry</a>) che poi si occuperà del trasferimento di dati tramite rete al server database.</p>
+                    <p>Il server web poi si occuperà di prelevare i dati dal database e di mostrarli al client.</p>
+                </section>
+
+                <section>
+                    <h2>Sensori</h2>
+
+                    <img src="imgs/ProgettoSensori.png">
+
+                    <h3>Rain Gauge</h3>
+                    <p>Pluviometro, non ha un tetto per proteggerlo dall'acqua ma ha un imbuto per raccoglierla.</p>
+                    <h3>Temperature and Umidity</h3>
+                    <p>Contenitore che protegge dei sensori sensibili ai raggi del sole; è composto da piatti impilati in modo da far passare l'aria. L'umidità è misurata da un igrometro, che ha bisogno di un circuito (che va protetto dai raggi del sole), stessa cosa per il termometro.</p>
+                    <h3>Wind Sensor</h3>
+                    <p>Direzione e intensità del vento</p>
+                    <h3>Barometric Pressure</h3>
+                    <p>Misura la pressione dell'aria per capire l'arrivo del maltempo</p>
+                
+                    <h3>Considerazioni</h3>
+                    <p>Abbiamo quindi un totale di 6 sensori.</p>
+                    <p>C'è un host (il raspberry) che legge i dati dei sensori e tramite rete trasmette i dati al server database.</p>
+
+                </section>
+
+                <section>
+                    <!-- <div style="display: flex; align-items: center; flex-direction: column;"> -->
+                    <div>
+                        <h2>Stazione Meteo</h2>
+                        <p>Questa è la stazione meteo. I punti di interesse sono cliccabili per vari approfondimenti.</p>
                         <img src="imgs/StazioneMeteo.png" usemap="#image-map" width="1000" style="border: solid 1px black;">
                     </div>
                 
                     <map name="image-map">
                         <area target="" alt="Anemometro" title="Anemometro" +
-                            href="./pages/mainStation/anemometro.html" coords="645,115,879,247" shape="rect">
+                            href="./components/mainStation/anemometro.html" coords="645,115,879,247" shape="rect">
                         <area target="" alt="Encoders" title="Encoders" 
-                            href="./pages/mainStation/encoders.html" coords="732,232,761,231,764,243,774,248,772,334,763,340,763,352,731,354,731,340,718,338,718,310,715,275,719,255,732,246" shape="poly">
+                            href="./components/mainStation/encoders.html" coords="732,232,761,231,764,243,774,248,772,334,763,340,763,352,731,354,731,340,718,338,718,310,715,275,719,255,732,246" shape="poly">
                         <area target="" alt="Banderuola o segnavento (rileva direz vento)" title="Banderuola o segnavento (rileva direz vento)" 
-                            href="./pages/mainStation/banderuola.html" coords="654,360,970,513" shape="rect">
+                            href="./components/mainStation/banderuola.html" coords="654,360,970,513" shape="rect">
                         <area target="" alt="Protezione dai raggi solari, termometro e igrometro dentro" title="Protezione dai raggi solari, termometro e igrometro dentro" 
-                            href="./pages/mainStation/proterigro.html" coords="487,618,558,773" shape="rect">
+                            href="./components/mainStation/proterigro.html" coords="487,618,558,773" shape="rect">
                         <area target="" alt="Pluviometro" title="Pluviometro" 
-                            href="./pages/mainStation/pulviometro.html" coords="157,754,294,852" shape="rect">
+                            href="./components/mainStation/pulviometro.html" coords="157,754,294,852" shape="rect">
                         <area target="" alt="PiCam" title="PiCam" 
-                            href="./pages/mainStation/picam.html" coords="548,1027,581,1072" shape="rect">
+                            href="./components/mainStation/picam.html" coords="548,1027,581,1072" shape="rect">
                         <area target="" alt="Elettronica acquisizione e trasmissione" title="Elettronica acquisizione e trasmissione" 
-                            href="./pages/mainStation/acqetra.html" coords="421,923,651,1195" shape="rect">
+                            href="./components/mainStation/acqetra.html" coords="421,923,651,1195" shape="rect">
                     </map>
                 </section>
                 <section>
