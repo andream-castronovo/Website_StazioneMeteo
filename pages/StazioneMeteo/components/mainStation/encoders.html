@@ -20,48 +20,58 @@
 <body>
     <div id="container">
         <div id="menu">
-            <header>
-                <img src="../../../../common/imgs/logo.png" alt="Logo del sito">
-                <h1>Encoders</h1>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="../../../../index.html">Home</a></li>
-                    <li><a href="../../../../pages/Informazioni/informazioni.html">Informazioni</a></li>
-                    <li><a href="../../../../pages/Contatti/contatti.html">Contatti</a></li>
-                    <li>
-                        <a href="../../../../pages/StazioneMeteo/stazioneMeteo.html">Stazione Meterologica</a>
-                        <ul>
-                            <li>
-                                <a href="../../../../pages/StazioneMeteo/stazioneMeteo.html">Esterno</a>
-                                <ul>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/mainStation/acqetra.html">Acquisizione e trasmissione</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/mainStation/anemometro.html">Anemometro</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/mainStation/banderuola.html">Banderuola</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/mainStation/encoders.html">Encoders</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/mainStation/picam.html">PiCam</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/mainStation/proterigro.html">Termometro e Igrometro</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/mainStation/pulviometro.html">Pluvometro</a></li>
-                                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav">
+                    <img src="../../../../common/imgs/logo.png" alt="Logo del sito" height="100%">
+                    <h1 style="font-size: 25px;">Stazione metereologica</h1>
+                    <li class="nav-item"><a class="nav-link" href="../../../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="../../../../pages/Informazioni/informazioni.html">Informazioni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../../../pages/Contatti/contatti.html">Contatti</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Stazione Metereologica
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="../../../../pages/StazioneMeteo/stazioneMeteo.html" style="text-decoration: none; color:darkslategray;">Esterno <i class="bi bi-arrow-down-short"></i></a></li>
+                            <li><a class="dropdown-item"
+                                    href="../../../../pages/StazioneMeteo/components/mainStation/acqetra.html">Acquisizione
+                                    e trasmissione</a></li>
+                            <li><a class="dropdown-item"
+                                    href="../../../../pages/StazioneMeteo/components/mainStation/anemometro.html">Anemometro</a>
                             </li>
-                            <li>
-                                <a href="../../../../pages/StazioneMeteo/components/mainStation/acqetra.html">Interno</a>
-                                <ul>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/electronic/antirimbalzo.html">Circuito antirimbalzo</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/electronic/batteriaCont.html">Batteria di continuità</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/electronic/picam.html">PiCam</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/electronic/raspberry.html">Raspberry</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/electronic/regtenin.html">Regolatore tensione input</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/electronic/regtenout.html">Regolatore tensione output</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/electronic/ups.html">UPS</a></li>
-                                </ul>
+                            <li><a class="dropdown-item"
+                                    href="../../../../pages/StazioneMeteo/components/mainStation/banderuola.html">Banderuola</a>
                             </li>
+                            <li><a class="dropdown-item"
+                                    href="../../../../pages/StazioneMeteo/components/mainStation/encoders.html">Encoders</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="../../../../pages/StazioneMeteo/components/mainStation/picam.html">PiCam</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="../../../../pages/StazioneMeteo/components/mainStation/proterigro.html">Termometro
+                                    e Igrometro</a></li>
+                            <li><a class="dropdown-item"
+                                    href="../../../../pages/StazioneMeteo/components/mainStation/pulviometro.html">Pluvometro</a>
+                            </li>
+                            <li> <a href="../../../../pages/StazioneMeteo/components/mainStation/acqetra.html"  style="text-decoration: none; color:darkslategray;">Interno <i class="bi bi-arrow-down-short"></i></a></li>
+                                <li><a class="dropdown-item" href="../../../../pages/StazioneMeteo/components/electronic/antirimbalzo.html">Circuito antirimbalzo</a></li>
+                                <li><a class="dropdown-item" href="../../../../pages/StazioneMeteo/components/electronic/batteriaCont.html">Batteria di continuità</a></li>
+                                <li><a class="dropdown-item" href="../../../../pages/StazioneMeteo/components/electronic/picam.html">PiCam</a></li>
+                                <li><a class="dropdown-item" href="../../../../pages/StazioneMeteo/components/electronic/raspberry.html">Raspberry</a></li>
+                                <li><a class="dropdown-item" href="../../../../pages/StazioneMeteo/components/electronic/regtenin.html">Regolatore tensione input</a></li>
+                                <li><a class="dropdown-item" href="../../../../pages/StazioneMeteo/components/electronic/regtenout.html">Regolatore tensione output</a></li>
+                                <li><a class="dropdown-item" href="../../../../pages/StazioneMeteo/components/electronic/ups.html">UPS</a></li>
                             <li>
-                                <a href="../../../../pages/StazioneMeteo/components/mainStation/encoders.html">Encoders</a>
-                                <ul>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/encoders/incbas.html">Encoder assoluto</a></li>
-                                    <li><a href="../../../../pages/StazioneMeteo/components/encoders/incenc.html">Encoder incrementale</a></li>
-                                </ul>
+                                <li><a href="../../../../pages/StazioneMeteo/components/mainStation/encoders.html"  style="text-decoration: none; color:darkslategray;">Encoders <i class="bi bi-arrow-down-short"></i></a></li>
+                                <li><a class="dropdown-item"
+                                            href="../../../../pages/StazioneMeteo/components/encoders/incbas.html">Encoder
+                                            assoluto</a></li>
+                                <li><a class="dropdown-item"
+                                            href="../../../../pages/StazioneMeteo/components/encoders/incenc.html">Encoder
+                                            incrementale</a></li>
                             </li>
                         </ul>
                     </li>
@@ -77,9 +87,9 @@
 
                     <map name="image-map">
                         <area target="" alt="Encoder incrementale" title="Encoder incrementale" 
-                        href="../../../../pages/StazioneMeteo/components/encoders/incenc.html" coords="545,444,591,435,604,429,608,419,616,205,628,197,639,188,639,175,632,163,618,158,594,151,572,149,542,143,513,141,489,143,465,148,445,152,426,159,414,166,406,175,412,289,406,291,408,389,412,391,411,421,420,429,439,436,465,440,506,445" shape="poly">
+                        href="../../../.../../../../pages/StazioneMeteo/components/encoders/incenc.html" coords="545,444,591,435,604,429,608,419,616,205,628,197,639,188,639,175,632,163,618,158,594,151,572,149,542,143,513,141,489,143,465,148,445,152,426,159,414,166,406,175,412,289,406,291,408,389,412,391,411,421,420,429,439,436,465,440,506,445" shape="poly">
                         <area target="" alt="Encoder assoluto" title="Encoder assoluto" 
-                        href="../../../../pages/StazioneMeteo/components/encoders/incbas.html" coords="412,630,411,1072,400,1085,397,1124,407,1131,408,1180,456,1194,528,1205,587,1189,617,1175,608,1076,612,986,613,870,612,828,560,823,560,756,611,758,619,635,548,629,548,600,477,596,476,628" shape="poly">
+                        href="../../../.../../../../pages/StazioneMeteo/components/encoders/incbas.html" coords="412,630,411,1072,400,1085,397,1124,407,1131,408,1180,456,1194,528,1205,587,1189,617,1175,608,1076,612,986,613,870,612,828,560,823,560,756,611,758,619,635,548,629,548,600,477,596,476,628" shape="poly">
                     </map>
                 </section>
                 <section>
