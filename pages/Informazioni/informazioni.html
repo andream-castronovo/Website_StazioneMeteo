@@ -3,109 +3,143 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Tutto sul meteo a vostra disposizione!">
-    <meta name="keywords" content="Meteo, Stazione metereologica, Pioggia, Vento, Caldo, Freddo">
-    <meta name="author" content="Toni Greco">
-    <meta name="copyright" content="tonigreco.it">
+    <meta name="description" content="Stazione meteo della scuola Pascal Comandini di Cesena">
+    <meta name="keywords" content="Meteo">
+    <meta name="author" content="Andrea Maria Castronovo">
+    <meta name="copyright" content="Andtheking">
     <meta name="robots" content="noindex">
     <!--<meta http-equiv="refresh" content="60">-->
     <meta http-equiv="Expires" content="0" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stazione metereologica</title>
-    <link rel="stylesheet".+>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Stazione meteo</title>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../../common/css/common.css">
+
 </head>
 
+
 <body>
-    <div id="container">
-        <div id="menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <ul class="navbar-nav">
-                    <img src="../../common/imgs/logo.png" alt="Logo del sito" height="100%">
-                    <h1 style="font-size: 25px;">Stazione metereologica</h1>
-                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="../../pages/Informazioni/informazioni.html">Informazioni</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../pages/Contatti/contatti.html">Contatti</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Stazione Metereologica
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a href="../../pages/StazioneMeteo/stazioneMeteo.html" style="text-decoration: none; color:darkslategray;">Esterno <i class="bi bi-arrow-down-short"></i></a></li>
-                            <li><a class="dropdown-item"
-                                    href="../../pages/StazioneMeteo/components/mainStation/acqetra.html">Acquisizione
-                                    e trasmissione</a></li>
-                            <li><a class="dropdown-item"
-                                    href="../../pages/StazioneMeteo/components/mainStation/anemometro.html">Anemometro</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="../../pages/StazioneMeteo/components/mainStation/banderuola.html">Banderuola</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="../../pages/StazioneMeteo/components/mainStation/encoders.html">Encoders</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="../../pages/StazioneMeteo/components/mainStation/picam.html">PiCam</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="../../pages/StazioneMeteo/components/mainStation/proterigro.html">Termometro
-                                    e Igrometro</a></li>
-                            <li><a class="dropdown-item"
-                                    href="../../pages/StazioneMeteo/components/mainStation/pulviometro.html">Pluvometro</a>
-                            </li>
-                            <li> <a href="../../pages/StazioneMeteo/components/mainStation/acqetra.html"  style="text-decoration: none; color:darkslategray;">Interno <i class="bi bi-arrow-down-short"></i></a></li>
-                                <li><a class="dropdown-item" href="../../pages/StazioneMeteo/components/electronic/antirimbalzo.html">Circuito antirimbalzo</a></li>
-                                <li><a class="dropdown-item" href="../../pages/StazioneMeteo/components/electronic/batteriaCont.html">Batteria di continuità</a></li>
-                                <li><a class="dropdown-item" href="../../pages/StazioneMeteo/components/electronic/picam.html">PiCam</a></li>
-                                <li><a class="dropdown-item" href="../../pages/StazioneMeteo/components/electronic/raspberry.html">Raspberry</a></li>
-                                <li><a class="dropdown-item" href="../../pages/StazioneMeteo/components/electronic/regtenin.html">Regolatore tensione input</a></li>
-                                <li><a class="dropdown-item" href="../../pages/StazioneMeteo/components/electronic/regtenout.html">Regolatore tensione output</a></li>
-                                <li><a class="dropdown-item" href="../../pages/StazioneMeteo/components/electronic/ups.html">UPS</a></li>
-                            <li>
-                                <li><a href="../../pages/StazioneMeteo/components/mainStation/encoders.html"  style="text-decoration: none; color:darkslategray;">Encoders <i class="bi bi-arrow-down-short"></i></a></li>
-                                <li><a class="dropdown-item"
-                                            href="../../pages/StazioneMeteo/components/encoders/incbas.html">Encoder
-                                            assoluto</a></li>
-                                <li><a class="dropdown-item"
-                                            href="../../pages/StazioneMeteo/components/encoders/incenc.html">Encoder
-                                            incrementale</a></li>
-                            </li>
-                        </ul>
-                    </li>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-12 bg2 text-white py-3">
+                <div class="row">
+                    <div class="col-2">
+                        <!-- Provate anche con text-right, se lo preferite, ma solo con versione 4.5.2 di bootstrap. -->
+                        <img src="../../common/imgs/logo.png" alt="Logo del sito" width="50" class="img-fluid">
+                    </div>
+                    <div class="col-10">
+                        <h1 class="align-self-center">Progetto stazione meteo</h1>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <nav class="col-md-3 text-white p-3">
+                <ul class="list-unstyled">
+                    <li><a href="../../index.html" class="text-white">
+                            <i class="bi bi-house"></i> Home</a></li>
+
+                    <li><a href="../../pages/Informazioni/informazioni.html" class="text-white">
+                            Informazioni</a></li>
+
+                    <li><a href="../../pages/Contatti/contatti.html" class="text-white">
+                            Contatti</a></li>
+
+                    <div class="menu-meteo">
+                        <li><a href="../../pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
+                                Stazione meteo</a></li>
+
+                        <div class="menu-meteo-esterno">
+                            <li><a href="../../pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
+                                    &nbsp;&nbsp;&nbsp;Esterno</a></li>
+                            <ul class="list">
+                                <li><a href="../../pages/StazioneMeteo/components/mainStation/anemometro.html" class="text-white">
+                                        Anemometro</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/mainStation/banderuola.html" class="text-white">
+                                        Banderuola</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/mainStation/picam.html" class="text-white">
+                                        PiCam</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/mainStation/proterigro.html" class="text-white">
+                                        Igrometro e Termometro</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/mainStation/pulviometro.html" class="text-white">
+                                        Pluviometro</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-meteo-interno">
+                            <li><a href="../../pages/StazioneMeteo/components/mainStation/acqetra.html" class="text-white">
+                                    &nbsp;&nbsp;&nbsp;Interno</a></li>
+                            <ul class="list">
+                                <li><a href="../../pages/StazioneMeteo/components/electronic/antirimbalzo.html" class="text-white">
+                                        Antirimbalzo</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/electronic/batteriaCont.html" class="text-white">
+                                        Batteria di continuità</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/electronic/picam.html" class="text-white">
+                                        PiCam</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/electronic/raspberry.html" class="text-white">
+                                        Raspberry</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/electronic/regtenin.html" class="text-white">
+                                        Regolatore tensione entrata</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/electronic/regtenout.html" class="text-white">
+                                        Regolatore tensione uscita</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/electronic/ups.html" class="text-white">
+                                        UPS</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-meteo-encoders">
+                            <li><a href="../../pages/StazioneMeteo/components/mainStation/encoders.html" class="text-white">
+                                    &nbsp;&nbsp;&nbsp;Encoders</a></li>
+                            <ul class="list">
+                                <li><a href="../../pages/StazioneMeteo/components/encoders/incbas.html" class="text-white">
+                                        Encoder assoluto</a></li>
+                                <li><a href="../../pages/StazioneMeteo/components/encoders/incenc.html" class="text-white">
+                                        Encoder incrementale </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </ul>
             </nav>
-        </div>
-
-        <div id="main-content">
-            <main>
+            <main class="col-md-6 p-3">
                 <section>
-
+                    <h2>Chi sono?</h2>
+                    <p>Sono Andrea Maria Castronovo, uno studente dell'<abbr title="Istituto Tecnico Tecnologico">ITT</abbr> Pascal Comandini.</p>
+                    <p>Studio informatica presso il Blaise Pascal e mi trovo <abbr title="Novembre 2023">attualmente</abbr> in quinta superiore.</p>
                 </section>
                 <section>
-
+                    <h2>Come potete contattarmi?</h2>
+                    <h3>Email</h3>
+                    <p>Il mio indirizzo e-mail è <a href="mailto:andreamaria.castronovo.stud@ispascalcomandini.it">andreamaria.castronovo.stud@ispascalcomandini.it</a></p>
+                    <h3>Altri social e link utili</h3>
+                    <p>Potete trovare tutto ciò che riguarda me al seguente link: <a href="https://linktr.ee/Andtheking">linktr.ee/Andtheking</a></p>
                 </section>
             </main>
-        </div>
-
-        <div id="other-content">
-            <aside>
-                <h3>Link correlati</h3>
-                <ul>
-                    <li><a href="https://it.wikipedia.org/wiki/Stazione_meteorologica">Stazione metereologica</a></li>
+            </main>
+            <aside class="col-md-3 p-3">
+                <h3>Link utili</h3>
+                <ul class="list-unstyled">
+                    <li><a href="https://google.it" class="text-white">W.I.P.</a></li>
                 </ul>
             </aside>
         </div>
-
-        <div id="footer">
-            <footer>
-                <p>Creato da Andrea Maria Castronovo<sup>©</sup><p>
-                <p>Tutti i diritti riservati.</p>
-                <p>Contattami a <a href="mailto:andreamaria.castronovo.stud@ispascalcomandini.it">andreamaria.castronovo.stud@ispascalcomandini.it</a></p>
+        <div class="row">
+            <!--Tolto il margine superiore: mt-3-->
+            <footer class="col-12 p-3 text-center footer">
+                <p class="mb-1">Creato da Andrea Maria Castronovo<sup>©</sup>
+                <p>
+                <p class="mb-1">Tutti i diritti riservati.</p>
+                <p class="mb-1">Contattami a <a
+                        href="mailto:andreamaria.castronovo.stud@ispascalcomandini.it">andreamaria.castronovo.stud@ispascalcomandini.it</a>
+                </p>
             </footer>
         </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
+
+</html>

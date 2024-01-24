@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Appunti di Informatica per il quinto anno dell'ITT Blaise
-Pascal di Cesena">
-    <meta name="keywords" content="TSQL, HTML 5, CSS 3, JavaScript, Blazor">
-    <meta name="author" content="Toni Greco">
-    <meta name="copyright" content="tonigreco.it">
+    <meta name="description" content="Stazione meteo della scuola Pascal Comandini di Cesena">
+    <meta name="keywords" content="Meteo">
+    <meta name="author" content="Andrea Maria Castronovo">
+    <meta name="copyright" content="Andtheking">
     <meta name="robots" content="noindex">
     <!--<meta http-equiv="refresh" content="60">-->
     <meta http-equiv="Expires" content="0" />
@@ -18,16 +17,17 @@ Pascal di Cesena">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-
-        icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="common/css/common.css">
+
 </head>
+
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <header class="col-12 bg-info text-white py-3">
+            <header class="col-12 bg2 text-white py-3">
                 <div class="row">
                     <div class="col-2">
                         <!-- Provate anche con text-right, se lo preferite, ma solo con versione 4.5.2 di bootstrap. -->
@@ -40,65 +40,65 @@ Pascal di Cesena">
             </header>
         </div>
         <div class="row">
-            <nav class="col-md-3 bg-secondary text-white p-3">
+            <nav class="col-md-3 text-white p-3">
                 <ul class="list-unstyled">
                     <li><a href="index.html" class="text-white">
-                            <i class="bi bi-house"></i>Home</a></li>
+                            <i class="bi bi-house"></i> Home</a></li>
 
                     <li><a href="pages/Informazioni/informazioni.html" class="text-white">
-                            <i class="bi bi-question-octagon"></i>Informazioni</a></li>
+                            Informazioni</a></li>
 
                     <li><a href="pages/Contatti/contatti.html" class="text-white">
-                            <i class="bi bi-person-circle"></i>Contatti</a></li>
+                            Contatti</a></li>
 
                     <div class="menu-meteo">
                         <li><a href="pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
-                                <i class="bi bi-person-circle"></i>Stazione meteo</a></li>
+                                Stazione meteo</a></li>
 
                         <div class="menu-meteo-esterno">
                             <li><a href="pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
-                                    <i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Esterno</a></li>
+                                    &nbsp;&nbsp;&nbsp;Esterno</a></li>
                             <ul class="list">
                                 <li><a href="pages/StazioneMeteo/components/mainStation/anemometro.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Anemometro</a></li>
+                                        Anemometro</a></li>
                                 <li><a href="pages/StazioneMeteo/components/mainStation/banderuola.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Banderuola</a></li>
+                                        Banderuola</a></li>
                                 <li><a href="pages/StazioneMeteo/components/mainStation/picam.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>PiCam</a></li>
+                                        PiCam</a></li>
                                 <li><a href="pages/StazioneMeteo/components/mainStation/proterigro.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Igrometro e Termometro</a></li>
+                                        Igrometro e Termometro</a></li>
                                 <li><a href="pages/StazioneMeteo/components/mainStation/pulviometro.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Pluviometro</a></li>
+                                        Pluviometro</a></li>
                             </ul>
                         </div>
                         <div class="menu-meteo-interno">
                             <li><a href="pages/StazioneMeteo/components/mainStation/acqetra.html" class="text-white">
-                                    <i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Interno</a></li>
+                                    &nbsp;&nbsp;&nbsp;Interno</a></li>
                             <ul class="list">
                                 <li><a href="pages/StazioneMeteo/components/electronic/antirimbalzo.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Antirimbalzo</a></li>
+                                        Antirimbalzo</a></li>
                                 <li><a href="pages/StazioneMeteo/components/electronic/batteriaCont.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Batteria di continuità</a></li>
+                                        Batteria di continuità</a></li>
                                 <li><a href="pages/StazioneMeteo/components/electronic/picam.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>PiCam</a></li>
+                                        PiCam</a></li>
                                 <li><a href="pages/StazioneMeteo/components/electronic/raspberry.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Raspberry</a></li>
+                                        Raspberry</a></li>
                                 <li><a href="pages/StazioneMeteo/components/electronic/regtenin.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Regolatore tensione entrata</a></li>
+                                        Regolatore tensione entrata</a></li>
                                 <li><a href="pages/StazioneMeteo/components/electronic/regtenout.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Regolatore tensione uscita</a></li>
+                                        Regolatore tensione uscita</a></li>
                                 <li><a href="pages/StazioneMeteo/components/electronic/ups.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>UPS</a></li>
+                                        UPS</a></li>
                             </ul>
                         </div>
                         <div class="menu-meteo-encoders">
                             <li><a href="pages/StazioneMeteo/components/mainStation/encoders.html" class="text-white">
-                                    <i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Encoders</a></li>
+                                    &nbsp;&nbsp;&nbsp;Encoders</a></li>
                             <ul class="list">
                                 <li><a href="pages/StazioneMeteo/components/encoders/incbas.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Encoder assoluto</a></li>
+                                        Encoder assoluto</a></li>
                                 <li><a href="pages/StazioneMeteo/components/encoders/incenc.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Encoder incrementale </a></li>
+                                        Encoder incrementale </a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,16 +126,16 @@ Pascal di Cesena">
                     </ul>
                 </section>
             </main>
-            <aside class="col-md-3 p-3 bg-secondary">
+            <aside class="col-md-3 p-3">
                 <h3>Link utili</h3>
                 <ul class="list-unstyled">
-                    <li><a href="https://google.it" class="text-dark">W.I.P.</a></li>
+                    <li><a href="https://google.it" class="text-white">W.I.P.</a></li>
                 </ul>
             </aside>
         </div>
         <div class="row">
             <!--Tolto il margine superiore: mt-3-->
-            <footer class="col-12 bg-light p-3 text-center footer">
+            <footer class="col-12 p-3 text-center footer">
                 <p class="mb-1">Creato da Andrea Maria Castronovo<sup>©</sup>
                 <p>
                 <p class="mb-1">Tutti i diritti riservati.</p>

@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Appunti di Informatica per il quinto anno dell'ITT Blaise
-Pascal di Cesena">
-    <meta name="keywords" content="TSQL, HTML 5, CSS 3, JavaScript, Blazor">
-    <meta name="author" content="Toni Greco">
-    <meta name="copyright" content="tonigreco.it">
+    <meta name="description" content="Stazione meteo della scuola Pascal Comandini di Cesena">
+    <meta name="keywords" content="Meteo">
+    <meta name="author" content="Andrea Maria Castronovo">
+    <meta name="copyright" content="Andtheking">
     <meta name="robots" content="noindex">
     <!--<meta http-equiv="refresh" content="60">-->
     <meta http-equiv="Expires" content="0" />
@@ -18,20 +17,21 @@ Pascal di Cesena">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-
-        icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+
 </head>
+
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <header class="col-12 bg-info text-white py-3">
+            <header class="col-12 bg2 text-white py-3">
                 <div class="row">
                     <div class="col-2">
                         <!-- Provate anche con text-right, se lo preferite, ma solo con versione 4.5.2 di bootstrap. -->
-                        <img src="common/imgs/logo.png" alt="Logo del sito" width="50" class="img-fluid">
+                        <img src="../../common/imgs/logo.png" alt="Logo del sito" width="50" class="img-fluid">
                     </div>
                     <div class="col-10">
                         <h1 class="align-self-center">Progetto stazione meteo</h1>
@@ -40,65 +40,65 @@ Pascal di Cesena">
             </header>
         </div>
         <div class="row">
-            <nav class="col-md-3 bg-secondary text-white p-3">
+            <nav class="col-md-3 text-white p-3">
                 <ul class="list-unstyled">
                     <li><a href="../../index.html" class="text-white">
-                            <i class="bi bi-house"></i>Home</a></li>
+                            <i class="bi bi-house"></i> Home</a></li>
 
                     <li><a href="../../pages/Informazioni/informazioni.html" class="text-white">
-                            <i class="bi bi-question-octagon"></i>Informazioni</a></li>
+                            Informazioni</a></li>
 
                     <li><a href="../../pages/Contatti/contatti.html" class="text-white">
-                            <i class="bi bi-person-circle"></i>Contatti</a></li>
+                            Contatti</a></li>
 
                     <div class="menu-meteo">
                         <li><a href="../../pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
-                                <i class="bi bi-person-circle"></i>Stazione meteo</a></li>
+                                Stazione meteo</a></li>
 
                         <div class="menu-meteo-esterno">
                             <li><a href="../../pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
-                                    <i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Esterno</a></li>
+                                    &nbsp;&nbsp;&nbsp;Esterno</a></li>
                             <ul class="list">
                                 <li><a href="../../pages/StazioneMeteo/components/mainStation/anemometro.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Anemometro</a></li>
+                                        Anemometro</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/mainStation/banderuola.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Banderuola</a></li>
+                                        Banderuola</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/mainStation/picam.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>PiCam</a></li>
+                                        PiCam</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/mainStation/proterigro.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Igrometro e Termometro</a></li>
+                                        Igrometro e Termometro</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/mainStation/pulviometro.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Pluviometro</a></li>
+                                        Pluviometro</a></li>
                             </ul>
                         </div>
                         <div class="menu-meteo-interno">
                             <li><a href="../../pages/StazioneMeteo/components/mainStation/acqetra.html" class="text-white">
-                                    <i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Interno</a></li>
+                                    &nbsp;&nbsp;&nbsp;Interno</a></li>
                             <ul class="list">
                                 <li><a href="../../pages/StazioneMeteo/components/electronic/antirimbalzo.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Antirimbalzo</a></li>
+                                        Antirimbalzo</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/electronic/batteriaCont.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Batteria di continuità</a></li>
+                                        Batteria di continuità</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/electronic/picam.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>PiCam</a></li>
+                                        PiCam</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/electronic/raspberry.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Raspberry</a></li>
+                                        Raspberry</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/electronic/regtenin.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Regolatore tensione entrata</a></li>
+                                        Regolatore tensione entrata</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/electronic/regtenout.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Regolatore tensione uscita</a></li>
+                                        Regolatore tensione uscita</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/electronic/ups.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>UPS</a></li>
+                                        UPS</a></li>
                             </ul>
                         </div>
                         <div class="menu-meteo-encoders">
                             <li><a href="../../pages/StazioneMeteo/components/mainStation/encoders.html" class="text-white">
-                                    <i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Encoders</a></li>
+                                    &nbsp;&nbsp;&nbsp;Encoders</a></li>
                             <ul class="list">
                                 <li><a href="../../pages/StazioneMeteo/components/encoders/incbas.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Encoder assoluto</a></li>
+                                        Encoder assoluto</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/encoders/incenc.html" class="text-white">
-                                        <i class="bi bi-person-circle"></i>Encoder incrementale </a></li>
+                                        Encoder incrementale </a></li>
                             </ul>
                         </div>
                     </div>
@@ -109,8 +109,7 @@ Pascal di Cesena">
                     <h2>Progetto</h2>
                     <p>Osserviamo ora il progetto complessivo</p>
 
-                    <!-- TODO: Rendere l'immagine interattiva con una mappa -->
-                    <img src="imgs/Progetto.png">
+                    <img src="imgs/Progetto.png" class="img-fluid">
 
                     <p>Notiamo dei sensori che, tramite una rete, comunicano con un server database e un server web.</p>
                     <p>Tramite questi server i client faranno accesso ai dati rilevati dai sensori.</p>
@@ -121,7 +120,7 @@ Pascal di Cesena">
                 <section>
                     <h2>Sensori</h2>
 
-                    <img src="imgs/ProgettoSensori.png">
+                    <img src="imgs/ProgettoSensori.png" class="img-fluid">
 
                     <h3>Rain Gauge</h3>
                     <p>Pluviometro, non ha un tetto per proteggerlo dall'acqua ma ha un imbuto per raccoglierla.</p>
@@ -135,48 +134,19 @@ Pascal di Cesena">
                     <h3>Considerazioni</h3>
                     <p>Abbiamo quindi un totale di 6 sensori.</p>
                     <p>C'è un host (il raspberry) che legge i dati dei sensori e tramite rete trasmette i dati al server database.</p>
-
-                </section>
-
-                <section>
-                    <!-- <div style="display: flex; align-items: center; flex-direction: column;"> -->
-                    <div>
-                        <h2>Stazione Meteo</h2>
-                        <p>Questa è la stazione meteo. I punti di interesse sono cliccabili per vari approfondimenti.</p>
-                        <img src="imgs/StazioneMeteo.png" usemap="#image-map" width="1000" style="border: solid 1px black;">
-                    </div>
-                
-                    <map name="image-map">
-                        <area target="" alt="Anemometro" title="Anemometro" +
-                            href="./components/mainStation/anemometro.html" coords="645,115,879,247" shape="rect">
-                        <area target="" alt="Encoders" title="Encoders" 
-                            href="./components/mainStation/encoders.html" coords="732,232,761,231,764,243,774,248,772,334,763,340,763,352,731,354,731,340,718,338,718,310,715,275,719,255,732,246" shape="poly">
-                        <area target="" alt="Banderuola o segnavento (rileva direz vento)" title="Banderuola o segnavento (rileva direz vento)" 
-                            href="./components/mainStation/banderuola.html" coords="654,360,970,513" shape="rect">
-                        <area target="" alt="Protezione dai raggi solari, termometro e igrometro dentro" title="Protezione dai raggi solari, termometro e igrometro dentro" 
-                            href="./components/mainStation/proterigro.html" coords="487,618,558,773" shape="rect">
-                        <area target="" alt="Pluviometro" title="Pluviometro" 
-                            href="./components/mainStation/pulviometro.html" coords="157,754,294,852" shape="rect">
-                        <area target="" alt="PiCam" title="PiCam" 
-                            href="./components/mainStation/picam.html" coords="548,1027,581,1072" shape="rect">
-                        <area target="" alt="Elettronica acquisizione e trasmissione" title="Elettronica acquisizione e trasmissione" 
-                            href="./components/mainStation/acqetra.html" coords="421,923,651,1195" shape="rect">
-                    </map>
-                </section>
-                <section>
-
+                    <a href="components/mainStation/stazione.html">Vai alla mappa interattiva!</a>
                 </section>
             </main>
-            <aside class="col-md-3 p-3 bg-secondary">
+            <aside class="col-md-3 p-3">
                 <h3>Link utili</h3>
                 <ul class="list-unstyled">
-                    <li><a href="https://google.it" class="text-dark">W.I.P.</a></li>
+                    <li><a href="https://google.it" class="text-white">W.I.P.</a></li>
                 </ul>
             </aside>
         </div>
         <div class="row">
             <!--Tolto il margine superiore: mt-3-->
-            <footer class="col-12 bg-light p-3 text-center footer">
+            <footer class="col-12 p-3 text-center footer">
                 <p class="mb-1">Creato da Andrea Maria Castronovo<sup>©</sup>
                 <p>
                 <p class="mb-1">Tutti i diritti riservati.</p>

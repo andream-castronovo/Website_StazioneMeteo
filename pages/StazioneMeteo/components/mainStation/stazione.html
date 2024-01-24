@@ -104,12 +104,38 @@
                     </div>
                 </ul>
             </nav>
-            <main class="col-md-6 p-3">
-                <section>
-                    <h2>Descrizione</h2>
-                    <p>(12V -> 7V per alimentare UPS)</p>
+            <div class="col-md-2 d-xxl-none text-center d-flex align-items-center">
+                <button class="btn btn-primary btn-" onclick="document.getElementById('mappa').scrollIntoView();">Vai alla mappa</button>
+            </div>
+            <main class="col-xxl-6 p-3">
+                <section  id="mappa">
+                    <h2>Mappa interattiva stazione metereologica</h2>
+                    <img src="../../imgs/StazioneMeteo.png" usemap="#image-map" width="1000px"
+                        style="border: solid 1px black;">
+
+                    <map name="image-map">
+                        <area target="" alt="Anemometro" title="Anemometro" + href="anemometro.html"
+                            coords="645,115,879,247" shape="rect">
+                        <area target="" alt="Encoders" title="Encoders" href="encoders.html"
+                            coords="732,232,761,231,764,243,774,248,772,334,763,340,763,352,731,354,731,340,718,338,718,310,715,275,719,255,732,246"
+                            shape="poly">
+                        <area target="" alt="Banderuola o segnavento (rileva direz vento)"
+                            title="Banderuola o segnavento (rileva direz vento)" href="banderuola.html"
+                            coords="654,360,970,513" shape="rect">
+                        <area target="" alt="Protezione dai raggi solari, termometro e igrometro dentro"
+                            title="Protezione dai raggi solari, termometro e igrometro dentro" href="proterigro.html"
+                            coords="487,618,558,773" shape="rect">
+                        <area target="" alt="Pluviometro" title="Pluviometro" href="pulviometro.html"
+                            coords="157,754,294,852" shape="rect">
+                        <area target="" alt="PiCam" title="PiCam" href="picam.html" coords="548,1027,581,1072" shape="rect">
+                        <area target="" alt="Elettronica acquisizione e trasmissione"
+                            title="Elettronica acquisizione e trasmissione" href="acqetra.html" coords="421,923,651,1195"
+                            shape="rect">
+                    </map>
                 </section>
             </main>
+        </div>
+        <div class="row">
             <aside class="col-md-3 p-3">
                 <h3>Link utili</h3>
                 <ul class="list-unstyled">
@@ -133,4 +159,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
 
-</html>
+</html>                
+                
+                
