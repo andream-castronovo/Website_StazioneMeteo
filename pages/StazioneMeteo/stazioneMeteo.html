@@ -47,6 +47,8 @@
 
                     <li><a href="../../pages/Informazioni/informazioni.html" class="text-white">
                             Informazioni</a></li>
+<li><a href="../../pages/Rilevazioni/rilevazioni.html" class="text-white">
+                            Rilevazioni</a></li>
 
                     <li><a href="../../pages/Contatti/contatti.html" class="text-white">
                             Contatti</a></li>
@@ -56,7 +58,7 @@
                                 Stazione meteo</a></li>
 
                         <div class="menu-meteo-esterno">
-                            <li><a href="../../pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
+                            <li><a href="../../pages/StazioneMeteo/components/mainStation/stazione.html" class="text-white">
                                     &nbsp;&nbsp;&nbsp;Esterno</a></li>
                             <ul class="list">
                                 <li><a href="../../pages/StazioneMeteo/components/mainStation/anemometro.html" class="text-white">
@@ -67,7 +69,7 @@
                                         PiCam</a></li>
                                 <li><a href="../../pages/StazioneMeteo/components/mainStation/proterigro.html" class="text-white">
                                         Igrometro e Termometro</a></li>
-                                <li><a href="../../pages/StazioneMeteo/components/mainStation/pulviometro.html" class="text-white">
+                                <li><a href="../../pages/StazioneMeteo/components/mainStation/pluviometro.html" class="text-white">
                                         Pluviometro</a></li>
                             </ul>
                         </div>
@@ -117,24 +119,34 @@
                     <p>Il server web poi si occuperà di prelevare i dati dal database e di mostrarli al client.</p>
                 </section>
 
-                <section>
+                <section id="componenti">
                     <h2>Sensori</h2>
 
                     <img src="imgs/ProgettoSensori.png" class="img-fluid">
 
                     <h3>Rain Gauge</h3>
-                    <p>Pluviometro, non ha un tetto per proteggerlo dall'acqua ma ha un imbuto per raccoglierla.</p>
+                    <p><a href="../../pages/StazioneMeteo/components/mainStation/pluviometro.html">Pluviometro</a>, non ha un tetto per proteggerlo dall'acqua ma ha un imbuto per raccoglierla.</p>
+                    
                     <h3>Temperature and Umidity</h3>
-                    <p>Contenitore che protegge dei sensori sensibili ai raggi del sole; è composto da piatti impilati in modo da far passare l'aria. L'umidità è misurata da un igrometro, che ha bisogno di un circuito (che va protetto dai raggi del sole), stessa cosa per il termometro.</p>
+                    <p>Contenitore che protegge dei <a href="../../pages/StazioneMeteo/components/mainStation/proterigro.html">sensori sensibili</a> (termometro e igrometro) ai raggi del sole; </p>
+                    
                     <h3>Wind Sensor</h3>
                     <p>Direzione e intensità del vento</p>
+                    
                     <h3>Barometric Pressure</h3>
                     <p>Misura la pressione dell'aria per capire l'arrivo del maltempo</p>
                 
                     <h3>Considerazioni</h3>
                     <p>Abbiamo quindi un totale di 6 sensori.</p>
-                    <p>C'è un host (il raspberry) che legge i dati dei sensori e tramite rete trasmette i dati al server database.</p>
-                    <a href="components/mainStation/stazione.html">Vai alla mappa interattiva!</a>
+                    <p>C'è un host (il raspberry) che legge i dati da questi sensori e tramite rete trasmette i dati al server database.</p>
+                    
+                    
+                    <a href="components/mainStation/stazione.html">Vai alla mappa interattiva della stazione metereologica!</a>
+                </section>
+                <section>
+                    <h2>Sito web</h2>
+                    <p>Altra parte importante di questo progetto è proprio questo sito web!</p>
+                    <p>Una volta ottenuti i dati recepiti dalla stazione metereologica e inseriti nella base di dati, questo sito web deve accedervi e <a href="../Rilevazioni/rilevazioni.html">renderli disponibili</a> a tutti coloro che ne necessitano.</p>
                 </section>
             </main>
             <aside class="col-md-3 p-3">
@@ -148,7 +160,7 @@
             <!--Tolto il margine superiore: mt-3-->
             <footer class="col-12 p-3 text-center footer">
                 <p class="mb-1">Creato da Andrea Maria Castronovo<sup>©</sup>
-                <p>
+                </p>
                 <p class="mb-1">Tutti i diritti riservati.</p>
                 <p class="mb-1">Contattami a <a
                         href="mailto:andreamaria.castronovo.stud@ispascalcomandini.it">andreamaria.castronovo.stud@ispascalcomandini.it</a>

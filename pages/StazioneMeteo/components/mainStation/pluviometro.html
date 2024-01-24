@@ -47,6 +47,8 @@
 
                     <li><a href="../../../../pages/Informazioni/informazioni.html" class="text-white">
                             Informazioni</a></li>
+<li><a href="../../../../pages/Rilevazioni/rilevazioni.html" class="text-white">
+                            Rilevazioni</a></li>
 
                     <li><a href="../../../../pages/Contatti/contatti.html" class="text-white">
                             Contatti</a></li>
@@ -56,7 +58,7 @@
                                 Stazione meteo</a></li>
 
                         <div class="menu-meteo-esterno">
-                            <li><a href="../../../../pages/StazioneMeteo/stazioneMeteo.html" class="text-white">
+                            <li><a href="../../../../pages/StazioneMeteo/components/mainStation/stazione.html" class="text-white">
                                     &nbsp;&nbsp;&nbsp;Esterno</a></li>
                             <ul class="list">
                                 <li><a href="../../../../pages/StazioneMeteo/components/mainStation/anemometro.html" class="text-white">
@@ -67,7 +69,7 @@
                                         PiCam</a></li>
                                 <li><a href="../../../../pages/StazioneMeteo/components/mainStation/proterigro.html" class="text-white">
                                         Igrometro e Termometro</a></li>
-                                <li><a href="../../../../pages/StazioneMeteo/components/mainStation/pulviometro.html" class="text-white">
+                                <li><a href="../../../../pages/StazioneMeteo/components/mainStation/pluviometro.html" class="text-white">
                                         Pluviometro</a></li>
                             </ul>
                         </div>
@@ -106,7 +108,23 @@
             </nav>
             <main class="col-md-6 p-3">
                 <section>
-                    <h1>Contenuto</h1>
+                    <h2>Pluviometro</h2>
+                        <img class="img-fluid" src="../../../../common/imgs/pluviometro.jpg" alt="Pluviometro">
+                        <div class="row">
+                            <div class="col-xxl-6">
+                                <img style="max-width: none;" class="img-fluid" src="../../../../common/imgs/pluviometro_scheme_1.jpg" alt="Pluviometro">
+                            </div>
+                            <div class="col-xxl-6">
+                                <img style="max-width: none;" class="img-fluid" src="../../../../common/imgs/pluviometro_scheme_2.jpg" alt="Pluviometro">
+                            </div>
+                        </div>
+                        <br>
+                        <p>Le due foto rappresentano il funzionamento del Pluviometro ed è essenziale per capire l'output che riceviamo dal componente.
+                            Come notiamo l'acqua entra da sopra (per questo c'è un imbuto), l'acqua si deposiderà in uno dei due lati, facendo pesare il lato 
+                            più dell'altro e quindi facendo pendere il sistema verso questo. All'oscillare del componente raffigurato in azzurro nelle due immagini, 
+                            possiamo notare come il magnete (segnato come "magnet" nelle immagini) coincida con il "reed switch", un circuito che quando il magnete è vicino 
+                            conduce elettricità, quando è lontano invece non conduce. Tramite questo alternarsi tra "conduce" e "non conduce" porta all'output "1" e "0" 
+                            (nel caso di resistenza pull-up: 0 quando c'è il magnete, 1 quando non c'è, vediamo meglio dopo).</p>
                 </section>
             </main>
             <aside class="col-md-3 p-3">
@@ -120,7 +138,7 @@
             <!--Tolto il margine superiore: mt-3-->
             <footer class="col-12 p-3 text-center footer">
                 <p class="mb-1">Creato da Andrea Maria Castronovo<sup>©</sup>
-                <p>
+                </p>
                 <p class="mb-1">Tutti i diritti riservati.</p>
                 <p class="mb-1">Contattami a <a
                         href="mailto:andreamaria.castronovo.stud@ispascalcomandini.it">andreamaria.castronovo.stud@ispascalcomandini.it</a>

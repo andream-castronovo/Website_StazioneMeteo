@@ -11,6 +11,14 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    color: goldenrod ;
+}
+
+h3 {
+    color: lightgray
+}
+
 a {
     color: lightblue;
     text-decoration: none;
