@@ -3,6 +3,18 @@
     color: white;
 }
 
+input {
+    color: black
+}
+
+select {
+    color: black
+}
+
+option {
+    color: black
+}
+
 p {
     font-size: 20px;
 }
