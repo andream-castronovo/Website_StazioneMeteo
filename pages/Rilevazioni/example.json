@@ -1,0 +1,116 @@
+[
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "14",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-11-29 15:45:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "15",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2024-08-03 21:12:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "11",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-09-11 13:20:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "16",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2025-01-27 10:05:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "13",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-07-18 17:55:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "20",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2024-10-09 04:28:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "19",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2025-12-30 22:09:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "12",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-06-25 11:15:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "18",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2024-04-18 09:40:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "10",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-10-02 14:25:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "15",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2025-08-12 18:33:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "13",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2024-05-21 23:55:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "16",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-03-04 07:17:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "12",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2025-09-14 16:48:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "17",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2024-02-28 12:10:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "18",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-12-11 20:36:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "14",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2025-06-06 05:22:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "11",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2024-01-09 19:07:00"
+    },
+    {
+        "GrandezzaFisica": "Temperatura",
+        "Dato": "20",
+        "Localita_Indirizzo": "Monte Carpegna passo del Trabocchino",
+        "DataOra": "2023-04-30 03:59:00"
+    }
+]

@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="../../common/css/common.css">
 
+    
 </head>
 
 <body>
@@ -127,14 +128,10 @@
                     <div class="alert alert-danger" role="alert">Ancora in lavorazione!</div>
                     <h2 class="text-center">Rilevazioni</h2>
                     <p>Pagina dedicata alle rilevazioni della stazione metereologica</p>
-                    <input id="srcBar" type="text" placeholder="Ricerca...">
+                    <input id="srcBar" type="text" onkeydown="srcBarKeydown()" placeholder="Ricerca...">
                     <select id="stazioni" name="stazioni">
-                        <option value="cesena">Cesena</option>
-                        <option value="sanmauropascoli">San mauro pascoli</option>
                     </select>
                     <select id="sensori" name="sensori">
-                        <option value="temperatura">Temperatura</option>
-                        <option value="umidita">Umidità</option>
                     </select>
                     <table id="rilevazioni">
                         <th>
@@ -167,6 +164,7 @@
     </div>
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="rilevazioni.js"></script>
 </body>
 
 </html>
